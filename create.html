@@ -4,10 +4,7 @@
             return
         }
         const data = e.data
-       var sdata = data.split(",")
-       localStorage.setItem("Password", sdata[0])
-       localStorage.setItem("background", sdata[1])
-       localStorage.setItem("backgroundIsImage", sdata[2])
-       localStorage.setItem("startupProgram", sdata[3])
+        var name = prompt("Enter Account Name. Will overwrite data if name is in use")
+        localStorage.setItem(name, data)
     })
 </script>
