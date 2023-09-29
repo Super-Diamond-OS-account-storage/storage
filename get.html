@@ -1,0 +1,10 @@
+<script>
+    window.addEventListener("message", function (e) {
+        if (parent.location.href !== "https://alexidians.github.io/Super-Diamond-OS/account-manager.html") { 
+           return
+        }
+        const data = e.data
+        var name = prompt("Enter Account Name to Change to")
+        parent.eval("var accountDisc = " + localStorage.removeItem(name))
+    })
+</script>
