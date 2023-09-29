@@ -5,6 +5,6 @@
         }
         const data = e.data
         var name = prompt("Enter Account Name to Change to")
-        parent.eval("var accountDisc = " + localStorage.removeItem(name))
+        parent.eval("var accountDisc = " + localStorage.getItem(name))
     })
 </script>
