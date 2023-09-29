@@ -1,0 +1,13 @@
+<script>
+    window.addEventListener("message", function (e) {
+        if (e.origin !== "https://alexidians.github.io") {
+            return
+        }
+        const data = e.data
+       var sdata = data.split(",")
+       localStorage.setItem("Password", sdata[0])
+       localStorage.setItem("background", sdata[1])
+       localStorage.setItem("backgroundIsImage", sdata[2])
+       localStorage.setItem("startupProgram", sdata[3])
+    })
+</script>
