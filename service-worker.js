@@ -1,6 +1,7 @@
 const CACHE_NAME = 'offline-api';
 const CACHE_DATA = [
   '/service-worker.js',
+  '/load-service-worker.html'
   '/create.html',
   '/delete.html',
   '/get.html',
